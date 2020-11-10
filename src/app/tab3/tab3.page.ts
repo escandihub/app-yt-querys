@@ -280,6 +280,9 @@ export class Tab3Page implements OnInit{
     this.searchVideos = this.videos.filter(video => video.title.toLowerCase().includes(this.queryVideo));
   }
   shoudlPlay(){
+    /*
+    * @return {Object} me dio ansiedad bro :'v
+    */
     const id = this.route.snapshot.queryParams.id;
     const download = this.route.snapshot.queryParams.download;
     if (id !== undefined) {
